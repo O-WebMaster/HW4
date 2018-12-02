@@ -1,0 +1,96 @@
+
+
+.forma {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+/*                                                 Все то что относится к шапке                              */
+h3 {
+  margin: 2px;
+}
+
+.shapka {
+  position: relative;
+  box-sizing: border-box;
+  width: 800px;
+  height: 70px;
+  border: solid;
+  border-width: 2px 2px 0px 2px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: mistyrose;
+}
+.created{
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+  margin: 2px;
+}
+.close {
+  position: absolute;
+  right: 5px;
+  top: 1px;
+}
+/*                                                                Тело                                               */
+.telo {
+  box-sizing: border-box;
+  width: 800px;
+  height: 600px;
+  border: 2px solid;
+  padding-right: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: rgb(255, 177, 168);
+}
+/*                                                            тело сообщения                                          */
+.telo-msg {
+  display: flex; /* все дочерние блоки встали в 1ин ряд по горизонтали*/
+  align-items: flex-start; /* дочерние блоки перестали быть растянутыми по вертикали на весь блок с классом .telo*/
+  flex-wrap: wrap; /* дочерние блоки распределились по уровням в соответствии с шириной и перестали стоять ОДНОВРЕМЕННО в одном ряду*/
+  align-content: flex-start; /* дочерние блоки прижались к верху и не занимают все пространства блока, а занимают лишь пространство в соответствие со своей высотой*/
+  align-items: center; /* выровнены дочерние объекты по вертикали в одной строке относительно друг друга */
+  box-sizing: border-box;
+  width: 780px;
+  height: 580px;
+  padding: 0px;
+  overflow: auto;
+}
+.contact {
+  box-sizing: border-box;
+  width: 150px;
+  border-style: none none none none;
+  border-bottom-width: 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px
+}
+.msg {
+  box-sizing: border-box;
+  width: 600px;
+  border-style: none none none solid;
+  border-width: 3px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px
+}
+p {
+  border: 2px solid;
+  margin: 2px;
+  padding: 2px;
+  background: rgb(255, 197, 190);
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  background: mistyrose;
+  }
